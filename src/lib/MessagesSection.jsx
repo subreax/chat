@@ -8,9 +8,6 @@ const MessagesSection = ({ flex, activeChat, messages, onlineCount, myUsername, 
                 <section className="messages-section-active" style={{flex: flex}}>
                     <div className="msg-header">
                         <h3>{activeChat.title}</h3>
-                        <p className="msg-header__online-indicator">
-                            online: {onlineCount}
-                        </p>
                     </div>
                     
                     <MessagesList messages={messages} myUsername={myUsername} />
