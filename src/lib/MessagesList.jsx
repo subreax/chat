@@ -31,7 +31,15 @@ class MessagesList extends React.Component {
         );
     }
 
+    componentDidMount() {
+        this.scrollToBottom();
+    }
+
     componentDidUpdate() {
+        this.scrollToBottom();
+    }
+
+    scrollToBottom() {
         const el = this.containerRef.current;
         el.scrollTo(0, el.scrollHeight);
     }
