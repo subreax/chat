@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ChatListSection from "./lib/ChatListSection";
+import ChatSection from "./lib/ChatSection";
 import MessagesSection from "./lib/MessagesSection";
 
 function App() {
@@ -158,7 +158,7 @@ function App() {
 
     return (
         <main>
-            <ChatListSection chats={chats} onChatClicked={onChatSelected} />
+            <ChatSection chats={chats} onChatClicked={onChatSelected} />
             <MessagesSection
                 activeChat={activeChat}
                 messages={messages}
